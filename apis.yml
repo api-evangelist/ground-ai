@@ -1,7 +1,28 @@
 aid: ground-ai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ground-ai.png
 name: Ground AI
-description: Ground AI is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ground (joinground.com) is an AI-native revenue platform for consumer and e-commerce
+  brands, delivering autonomous "AI revenue agents" that drive growth across the customer
+  lifecycle. Its products include Greet AI for converting new visitors, ReBeat AI for
+  repeat purchases and retention, and Terra, an AI-native revenue engine that orchestrates
+  actions across the funnel. Ground positions itself as Growth-as-a-Service, plugging into a
+  brand's existing stack (Shopify, Klaviyo, Mailchimp, Recharge, Salesforce, Meta, Google Ads
+  and 20+ platforms) with a fast, low-lift deployment. Headquartered in New York and Silicon
+  Valley with a global team, Ground is a Techstars-backed company. This profile was added to
+  the API Evangelist network via VC-portfolio discovery; the company publishes no public API,
+  developer portal, SDKs, or technical documentation at this time.
 url: https://raw.githubusercontent.com/api-evangelist/ground-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- E-Commerce
+- Artificial Intelligence
+- Commerce
+- Revenue
+- Retention
+- Marketing Automation
+- AI Agents
+- Growth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ground-ai-domain-security.yml
 - type: Website
   url: https://joinground.com/
+- type: Login
+  url: https://app.joinground.com/auth/signin
+- type: TermsOfService
+  url: https://joinground.com/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://joinground.com/legal/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

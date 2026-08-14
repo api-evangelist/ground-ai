@@ -1,28 +1,34 @@
 aid: ground-ai
 accessModel:
-  pricing: unknown
-  onboarding: unknown
+  pricing: demo-gated
+  onboarding: sales
   trial: false
   try_now: false
   public: false
-  label: Unknown
-  confidence: low
-  source: []
-  generated: '2026-07-22'
-  method: derived
+  label: Demo-gated
+  confidence: medium
+  source:
+  - https://joinground.com/book-a-demo
+  - https://apps.shopify.com/ground
+  generated: '2026-08-14'
+  method: searched
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ground-ai.png
 name: Ground AI
 description: >-
-  Ground (joinground.com) is an AI-native revenue platform for consumer and e-commerce
-  brands, delivering autonomous "AI revenue agents" that drive growth across the customer
-  lifecycle. Its products include Greet AI for converting new visitors, ReBeat AI for
-  repeat purchases and retention, and Terra, an AI-native revenue engine that orchestrates
-  actions across the funnel. Ground positions itself as Growth-as-a-Service, plugging into a
-  brand's existing stack (Shopify, Klaviyo, Mailchimp, Recharge, Salesforce, Meta, Google Ads
-  and 20+ platforms) with a fast, low-lift deployment. Headquartered in New York and Silicon
-  Valley with a global team, Ground is a Techstars-backed company. This profile was added to
-  the API Evangelist network via VC-portfolio discovery; the company publishes no public API,
-  developer portal, SDKs, or technical documentation at this time.
+  Ground — legally Cheres, Inc (dba Ground), 20 Exchange Place, New York — is an AI-native
+  revenue platform for consumer and e-commerce brands, delivering autonomous "AI revenue
+  agents" that work across the customer lifecycle. Its named agents are Greet AI for
+  first-touch conversion of new visitors, ReCartify for identity resolution, ReBeat AI for
+  repeat purchase and winback, and Terra for repetitive marketer tasks. Ground positions
+  itself as Growth-as-a-Service, plugging into a brand's existing stack — Shopify, Adobe
+  Commerce, WooCommerce, Klaviyo, Mailchimp, Attentive, Postscript, Yotpo, Meta Ads and
+  Amped — with a stated 15-minute, no-developer setup. It is Techstars-backed and ships a
+  free Shopify App Store listing. Ground publishes product documentation, a blog, an FAQ
+  and a machine-readable llms.txt, and its robots.txt carries an explicit Cloudflare
+  Content Signals AI-use reservation (search=yes, ai-train=no, use=reference). It publishes
+  no public API, OpenAPI, MCP server, SDK, webhook catalog or developer portal: the platform
+  is delivered as managed connectors into the tools a brand already runs, and every
+  commercial path terminates in a demo booking.
 url: https://raw.githubusercontent.com/api-evangelist/ground-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -32,7 +38,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-14'
 tags:
 - Company
 - E-Commerce
@@ -43,6 +49,8 @@ tags:
 - Marketing Automation
 - AI Agents
 - Growth
+- Shopify
+- Agentic Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -60,8 +68,73 @@ common:
   url: https://joinground.com/legal/terms-of-service
 - type: PrivacyPolicy
   url: https://joinground.com/legal/privacy-policy
+- type: Documentation
+  url: https://joinground.com/documentation/what-is-ground
+- type: Blog
+  url: https://joinground.com/blog
+- type: Support
+  url: https://joinground.com/faq
+- type: LLMsTxt
+  url: llms/ground-ai-llms.txt
+- type: ContentSignal
+  url: well-known/ground-ai-robots.txt
+- type: Plans
+  url: plans/ground-ai-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/ground-ai-rate-limits.yml
+x-contract-discovery:
+  checked: '2026-08-14'
+  result: no-published-contract
+  hosts_probed:
+  - joinground.com
+  - app.joinground.com
+  - api.joinground.com (NXDOMAIN)
+  - docs.joinground.com (NXDOMAIN)
+  - developer.joinground.com (NXDOMAIN)
+  - developers.joinground.com (NXDOMAIN)
+  - mcp.joinground.com (NXDOMAIN)
+  - status.joinground.com (NXDOMAIN)
+  - trust.joinground.com (Vercel Security Checkpoint, 429)
+  rejected_candidates:
+  - source: https://github.com/ground-ai/docs (api-reference/openapi.yaml)
+    reason: >-
+      Real, parsing OpenAPI 3.1.0, but it belongs to a DIFFERENT company. The spec says so
+      about itself — info.title "Ground's API", servers[] https://platform.ground.dev,
+      contact contact@ground.dev, and a description stating "The Ground API allows developers
+      to create RAGs" with endpoints at www.ground.dev/api/. The sibling mint.json points at
+      https://platform.bound.dev/api and https://grounddev.slack.com. That is ground.dev, a
+      RAG/vector-search product, not Cheres, Inc (dba Ground) at joinground.com. NOT SAVED.
+  - source: https://www.postman.com/joinground
+    reason: >-
+      HTTP 200 is Postman's single-page-app catch-all. The Postman search API returns 0
+      results of every kind for "joinground". No public collection or workspace exists.
+  - source: https://trust.joinground.com/
+    reason: >-
+      Wildcard *.joinground.com resolves to Vercel; the host answers 429 with a "Vercel
+      Security Checkpoint" interstitial on every path. Not a trust center.
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-14'
+  status: minimal
+  artifacts_added: 5
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Ground ships its AI revenue agents as managed connectors into Shopify, Klaviyo,
+    Attentive and Mailchimp and markets a "no dev time" setup, so there is nothing to call:
+    joinground.com/api, /docs, /developers and /openapi.json all return 404, no api. or
+    docs. subdomain resolves, and the only machine-readable documents on the domain are
+    llms.txt, robots.txt and sitemap.xml.
+  evidence:
+  - url: https://joinground.com/developers
+    status: 404
+  - url: https://joinground.com/openapi.json
+    status: 404
+  - url: https://joinground.com/api-docs
+    status: 404
+  - url: https://joinground.com/.well-known/agent-card.json
+    status: 404
+  - url: https://joinground.com/llms.txt
+    status: 200
+  checked: '2026-08-14'

@@ -1,0 +1,42 @@
+generated: '2026-08-14'
+method: searched
+source: https://apps.shopify.com/ground
+plan_count: 1
+note: >-
+  Ground publishes no pricing page on its own site: https://joinground.com/pricing
+  returns 404 and no pricing URL appears in https://joinground.com/sitemap.xml. Every
+  commercial path on joinground.com terminates in a "Book a demo" form, so list pricing
+  for the platform is not published. The one price Ground does publish is on its Shopify
+  App Store listing, recorded below.
+publishes_pricing_page: false
+pricing_model: demo-gated
+plans:
+- name: Free
+  price: 0
+  currency: USD
+  billing_period: null
+  surface: Shopify App Store
+  url: https://apps.shopify.com/ground
+  included: null
+  overage: null
+  limits: []
+  note: >-
+    The Shopify App Store listing for the Ground app shows a single "Free" pricing tier
+    with no paid tiers listed. It does not describe the quota, seat or usage limits that
+    attach to it.
+attribution:
+  claim: The apps.shopify.com/ground listing belongs to this company.
+  evidence: >-
+    The listing's developer block carries data-developer-support-email="hello@joinground.com"
+    and the address "20 Exchange Place, #708, New York, NY, 10005, US", which matches the
+    legal entity named in Ground's own terms of service — "Cheres, Inc (dba Ground),
+    20 Exchange Place" (https://joinground.com/legal/terms-of-service).
+x-evidence:
+  fetched: '2026-08-14'
+  probes:
+  - url: https://joinground.com/pricing
+    status: 404
+  - url: https://apps.shopify.com/ground
+    status: 200
+  - url: https://joinground.com/legal/terms-of-service
+    status: 200

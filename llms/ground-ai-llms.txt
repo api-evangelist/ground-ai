@@ -1,0 +1,32 @@
+# Ground
+
+> Ground is an AI revenue engine for commerce: autonomous AI agents that live inside a brand's existing marketing and support stack (Klaviyo, Shopify, Attentive, Postscript, Gorgias, Yotpo, Alia) and continuously uncover and unlock revenue across new-customer acquisition and repeat purchases.
+
+Ground connects to the tools ecommerce brands already use and analyzes customer behavior, purchasing patterns, geography, and hundreds of other signals to find and act on revenue opportunities that internal teams cannot compute or execute at scale. It is designed to complement marketing teams, not replace them — a focused layer that captures and boosts revenue on top of existing email, SMS, and lifecycle programs. Ground is used by direct-to-consumer and ecommerce brands and by the agencies that serve them.
+
+## Product
+- [Ground homepage](https://joinground.com/): Overview of Ground's AI revenue agents for commerce.
+- [How it works](https://joinground.com/how-it-works): How Ground's AI agents connect to a brand's stack and generate revenue.
+- [Integrations](https://joinground.com/integrations): Supported platforms — Klaviyo, Shopify, Attentive, Postscript, Gorgias, Yotpo, Alia, and others.
+- [First-time customer revenue agent](https://joinground.com/first-time-customer-revenue-generator-agent): AI agent focused on converting first-time and new customers.
+- [First-time customer revenue agent for Shopify](https://joinground.com/first-time-customer-revenue-agent-for-shopify): The first-time-customer revenue agent for Shopify stores.
+- [Increase Klaviyo signups](https://joinground.com/increase-klaviyo-signups): Grow email and SMS list signups that feed Klaviyo.
+- [Book a demo](https://joinground.com/book-a-demo): Schedule a live demo of Ground.
+
+## Proof and results
+- [Customer stories](https://joinground.com/customer-stories): Case studies with measured ROI (for example, MAIKA Handbags at 10x ROI and EVOLVh at 12x winback revenue).
+- [Community interviews](https://joinground.com/interviews): Interviews with commerce, retention, and lifecycle-marketing leaders.
+- [Ground for beauty](https://joinground.com/beauty): Ground for beauty and personal-care brands.
+
+## Resources
+- [Blog](https://joinground.com/blog): Articles on ecommerce customer retention, personalization, SMS and email marketing, churn reduction, and platform comparisons (Klaviyo, Attentive, and alternatives).
+- [FAQ](https://joinground.com/faq): Common questions about how Ground works, data and security, and where it fits alongside an internal team.
+- [Documentation](https://joinground.com/documentation): Product documentation and how-to guides.
+
+## Company
+- [About](https://joinground.com/about): About Ground and its mission.
+- [For agencies](https://joinground.com/agencies): How marketing agencies use Ground for their clients.
+- [Community](https://joinground.com/community): Ground's community for commerce and retention operators.
+
+## Contact
+- Email: hey@joinground.com

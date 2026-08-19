@@ -1,0 +1,102 @@
+generated: '2026-08-14'
+method: probed
+source: live HTTP probes of joinground.com and app.joinground.com
+note: >-
+  Every RFC 8615 /.well-known/ path probed on both hosts returned 404. No WellKnown
+  or SecurityTxt pointer is emitted in apis.yml — this file records a verified absence,
+  not a served discovery surface. The only root-level discovery documents Ground does
+  serve are /robots.txt (carrying Cloudflare Content Signals), /llms.txt and
+  /sitemap.xml, recorded below and saved verbatim.
+hosts:
+- host: https://joinground.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /security.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+    content_type: text/plain; charset=utf-8
+    file: ground-ai-robots.txt
+  - path: /llms.txt
+    status: 200
+    content_type: text/plain;charset=utf-8
+    file: ../llms/ground-ai-llms.txt
+  - path: /sitemap.xml
+    status: 200
+    content_type: text/xml
+- host: https://app.joinground.com
+  note: >-
+    Single-page application. Unknown paths (for example /zzznope) answer 200 with the
+    same 13,888-byte shell, so a 200 on this host is not evidence of a document; only
+    the /.well-known/* 404s below are meaningful.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /robots.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
+content_signals:
+  source: https://joinground.com/robots.txt
+  file: ground-ai-robots.txt
+  standard: Cloudflare Content Signals Policy
+  declaration: search=yes,ai-train=no,use=reference
+  applies_to: 'User-agent: *'
+  signals:
+    search: 'yes'
+    ai-train: 'no'
+    use: reference
+  ai_train: false
+  disallowed_agents:
+  - Amazonbot
+  - Applebot-Extended
+  - Bytespider
+  - CCBot
+  - ClaudeBot
+  - CloudflareBrowserRenderingCrawler
+  - Google-Extended
+  - GPTBot
+  - meta-externalagent
+  note: >-
+    Ground publishes an explicit machine-readable AI-use reservation of rights via
+    Cloudflare's managed Content Signals block, and additionally disallows nine named
+    AI crawlers outright. This profile was assembled under search=yes / use=reference,
+    which the policy permits; no content was collected for model training.
+x-evidence:
+  fetched: '2026-08-14'
+  probes:
+  - url: https://joinground.com/robots.txt
+    status: 200
+  - url: https://joinground.com/llms.txt
+    status: 200
+  - url: https://joinground.com/.well-known/security.txt
+    status: 404
+  - url: https://app.joinground.com/.well-known/agent-card.json
+    status: 404

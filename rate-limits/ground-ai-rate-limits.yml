@@ -1,0 +1,25 @@
+generated: '2026-08-14'
+method: searched
+source: https://joinground.com/llms.txt
+limit_count: 0
+note: >-
+  Ground publishes no rate limits because it publishes no public API. Contract discovery
+  found no OpenAPI, GraphQL, MCP or webhook surface on joinground.com or app.joinground.com
+  (see x-coverage in apis.yml), and neither the product documentation
+  (https://joinground.com/documentation/what-is-ground) nor the terms of service mention
+  API access, quotas, throttling or automated-access limits. There is therefore nothing to
+  record — an honest zero, not an unchecked field.
+limits: []
+response_headers: []
+exhaustion_status: null
+x-evidence:
+  fetched: '2026-08-14'
+  probes:
+  - url: https://joinground.com/llms.txt
+    status: 200
+  - url: https://joinground.com/documentation/what-is-ground
+    status: 200
+  - url: https://joinground.com/legal/terms-of-service
+    status: 200
+  - url: https://joinground.com/openapi.json
+    status: 404

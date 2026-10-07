@@ -69,6 +69,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Pricing
+  url: https://apps.shopify.com/ground
 - type: DomainSecurity
   url: security/ground-ai-domain-security.yml
 - type: Website

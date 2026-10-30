@@ -64,6 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ground AI is a company surfaced as a portfolio company of techstars and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Ground — legally Cheres, Inc (dba Ground), 20 Exchange Place, New York — is an AI-native revenue platform for consumer and e-commerce brands, delivering autonomous "AI revenue agents" that work across the customer lifecycle. Its named agents are Greet AI for first-touch conversion of new visitors, ReCartify for identity resolution, ReBeat AI for repeat purchase and winback, and Terra for repetitive marketer tasks. Ground positions itself as Growth-as-a-Service, plugging into a brand's existing stack — Shopify, Adobe Commerce, WooCommerce, Klaviyo, Mailchimp, Attentive, Postscript, Yotpo, Meta Ads and Amped — with a stated 15-minute, no-developer setup. It is Techstars-backed and ships a free Shopify App Store listing. Ground publishes product documentation, a blog, an FAQ and a machine-readable llms.txt, and its robots.txt carries an explicit Cloudflare Content Signals AI-use reservation (search=yes, ai-train=no, use=reference). It publishes no public API, OpenAPI, MCP server, SDK, webhook catalog or developer portal: the platform is delivered as managed connectors into the tools a brand already runs, and every commercial path terminates in a demo booking.
 
-Backed by: techstars — https://joinground.com/
+**Areas:** Company · E-Commerce · Artificial Intelligence · Commerce · Revenue · Retention · Marketing Automation · AI Agents · Growth · Shopify · Agentic Commerce
+
+## Ground AI on APIs.io
+
+Everything profiled for Ground AI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ground-ai/](https://apis.io/providers/ground-ai/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ground Ai Domain Security](https://apis.io/security/ground-ai/ground-ai-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Ground Ai Plans Pricing](https://apis.io/plans/ground-ai/ground-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Ground Ai Rate Limits](https://apis.io/rate-limits/ground-ai/ground-ai-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://joinground.com/)
+- [Documentation](https://joinground.com/documentation/what-is-ground)
+- [Pricing](https://apps.shopify.com/ground)
+- [Support](https://joinground.com/faq)
+- [Blog](https://joinground.com/blog)
+- [Terms of service](https://joinground.com/legal/terms-of-service)
+- [Privacy policy](https://joinground.com/legal/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 20.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 59.2 |
+
+**Agent readiness 4.7** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | yes |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ground-ai/](https://apis.io/providers/ground-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ground AI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ground-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
